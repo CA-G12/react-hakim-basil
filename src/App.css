@@ -7,12 +7,12 @@
 
 :root {
   --main-color: #330031;
-  --second-main-color: #CCCCCC;
-  --first-color: #FFCCFD;
-  --first-linear-color: #CA26FF;
-  --second-linear-color: #FFF3B0;
-  --thierd-linear-color: #F4CAC0;
-  --white: #FFFFFF;
+  --second-main-color: #cccccc;
+  --first-color: #ffccfd;
+  --first-linear-color: #ca26ff;
+  --second-linear-color: #fff3b0;
+  --thierd-linear-color: #f4cac0;
+  --white: #ffffff;
   --black: #111111;
 }
 
@@ -56,7 +56,7 @@ header .search {
   overflow: hidden;
   border-radius: 30px;
   position: relative;
-  box-shadow: 0 2px 5px 0 #eee
+  box-shadow: 0 2px 5px 0 #eee;
 }
 
 header .search input {
@@ -115,3 +115,67 @@ header .btns button#login:hover {
 }
 
 /* HEADER STYLE ENDS */
+
+#landing {
+  padding: 2rem 10rem;
+  height: 741px;
+}
+
+.landing {
+  background: linear-gradient(
+    135deg,
+    #ca26ff 7.17%,
+    #f4cac0 85.48%,
+    #fff3b0 100%
+  );
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: red;
+  border-radius: 20px 20px 300px 20px;
+  height: 100%;
+}
+
+.info {
+  padding: 6rem 4rem;
+}
+
+.info h1 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 0.125em;
+  color: #330031;
+  margin-bottom: 1.5rem;
+}
+
+.info h2 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 0%;
+  letter-spacing: 0.395em;
+  color: #ffffff;
+  margin-bottom: 5rem;
+}
+
+.info p {
+  width: 650px;
+  height: 200px;
+  margin-left: 5rem;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 149.5%;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.image img {
+  margin-top: 6rem;
+  margin-right: -2rem;
+  width: 552px;
+  height: 532px;
+}
