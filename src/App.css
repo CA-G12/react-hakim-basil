@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+:root {
+  --main-color: #330031;
+  --second-main-color: #CCCCCC;
+  --first-color: #FFCCFD;
+  --first-linear-color: #CA26FF;
+  --second-linear-color: #FFF3B0;
+  --thierd-linear-color: #F4CAC0;
+  --white: #FFFFFF;
+  --black: #111111;
+}
+
+/* HEADER STYLE STARTS */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  color: var(--black);
+  gap: 2rem;
+  text-transform: capitalize;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  flex-shrink: 0;
+}
+
+header ul li:hover {
+  transform: scale(1.1);
+  color: var(--first-linear-color);
+  cursor: pointer;
+}
+
+header .search {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first-color);
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0 2px 5px 0 #eee
+}
+
+header .search input {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  padding: 0.6rem 1rem;
+  outline: 0;
+  border: 0;
+  color: var(--black);
+}
+
+header .search i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+header .search input::placeholder {
+  color: var(--white);
+}
+
+header .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+header .btns button {
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  border: 0;
+  outline: 1px solid var(--black);
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+header .btns button:hover {
+  background-color: var(--first-color);
+  outline: 0;
+}
+
+header .btns button#login {
+  outline: 0;
+}
+
+header .btns button#login:hover {
+  outline: 1px solid var(--black);
+  background-color: inherit;
+}
+
+/* HEADER STYLE ENDS */
