@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #330031;
+  --second-main-color: #cccccc;
+  --first-color: #ffccfd;
+  --first-linear-color: #ca26ff;
+  --second-linear-color: #fff3b0;
+  --thierd-linear-color: #f4cac0;
+  --white: #ffffff;
+  --black: #111111;
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: red;
+}
