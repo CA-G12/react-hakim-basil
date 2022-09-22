@@ -48,7 +48,7 @@ class LandingSection extends React.Component {
               <a href="#"></a>
             </div>
             <div className="image">
-              <img src="watching-movie.png" alt="" />
+              <img src="https://i.ibb.co/qW4Qw8f/watching-movie.png" alt="background" />
             </div>
           </div>
         }
