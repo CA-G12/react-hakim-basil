@@ -12,13 +12,19 @@ class CardsContainer extends React.Component {
     });
   };
 
+  filterableAnimes = () => {
+    return this.state.data.data.filter((card) => {
+      return card.title
+        .toLowerCase()
+        .startsWith(this.props.search.toLowerCase());
+    });
+  };
+
   render() {
     if (!this.state.data) return <div>hello from the other side</div>;
-
-    const { data } = this.state.data;
     return (
       <section id="cards">
-        {data.map((anime) => (
+        {this.filterableAnimes().map((anime) => (
           <Card key={anime.title} animeData={anime} />
         ))}
       </section>
@@ -36,10 +42,3 @@ const getAnimes = () => {
 };
 
 export default CardsContainer;
-
-{
-  /* <div className="card">
-  <img src="https://cdn.myanimelist.net/images/anime/1439/93480.jpg" alt="" />
-  <button>Movie Name</button>
-</div>; */
-}

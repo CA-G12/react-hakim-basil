@@ -15,6 +15,7 @@ class LandingSection extends React.Component {
               ratione doloribus eos. perferendis nulla soluta aliquam, magni in
               ratione doloribus eos.
             </p>
+            <a href="#"></a>
           </div>
           <div className="image">
             <img src="watching-movie.png" alt="" />

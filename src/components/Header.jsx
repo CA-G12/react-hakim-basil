@@ -1,7 +1,17 @@
 import { Component } from "react";
+import CardsContainer from "./CardsContainer";
 
 export default class Header extends Component {
+  state = {
+    searchValue: "",
+  };
+
+  passingValue = () => {
+    <CardsContainer />;
+  };
+
   render() {
+    const { handleSearch } = this.props;
     return (
       <header>
         <h1>showHub</h1>
@@ -11,7 +21,11 @@ export default class Header extends Component {
           <li>about us</li>
         </ul>
         <div className="search">
-          <input type="text" placeholder="search" />
+          <input
+            type="text"
+            onChange={(e) => handleSearch(e.target.value)}
+            placeholder="search"
+          />
           <i className="fa-solid fa-magnifying-glass"></i>
         </div>
         <div className="btns">
