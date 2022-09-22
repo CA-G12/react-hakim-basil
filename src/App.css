@@ -117,7 +117,7 @@ header .btns button#login:hover {
 /* HEADER STYLE ENDS */
 
 #landing {
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   height: 741px;
 }
 
@@ -130,30 +130,28 @@ header .btns button#login:hover {
   );
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: red;
   border-radius: 20px 20px 300px 20px;
   height: 100%;
 }
 
 .info {
-  padding: 6rem 4rem;
-}
-
-.info h1 {
+  padding: 6rem 3rem;
   font-family: "Segoe UI";
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+}
+
+.info h1 {
+  /* font-weight: 700; */
+  font-size: 3.8rem;
   letter-spacing: 0.125em;
   color: #330031;
   margin-bottom: 1.5rem;
 }
 
 .info h2 {
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  /* font-weight: 700; */
+  font-size: 2.2rem;
   line-height: 0%;
   letter-spacing: 0.395em;
   color: #ffffff;
@@ -161,13 +159,10 @@ header .btns button#login:hover {
 }
 
 .info p {
-  width: 650px;
+  width: 600px;
   height: 200px;
-  margin-left: 5rem;
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
+  margin-left: 3rem;
+  font-size: 1.2rem;
   line-height: 149.5%;
   letter-spacing: 0.015em;
   color: #ffffff;
@@ -176,8 +171,8 @@ header .btns button#login:hover {
 .image img {
   margin-top: 6rem;
   margin-right: -2rem;
-  width: 552px;
-  height: 532px;
+  width: 500px;
+  height: 500px;
 }
 
 /* End of landing page */
@@ -186,6 +181,7 @@ header .btns button#login:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
 }
 
 #cards .card {
@@ -202,6 +198,12 @@ header .btns button#login:hover {
   width: 240px;
   height: 355.66px;
   border-radius: 35px;
+}
+
+#cards .card:hover img {
+  cursor: pointer;
+  transform: scale(0.95);
+  opacity: 0.9;
 }
 
 #cards .card button {
