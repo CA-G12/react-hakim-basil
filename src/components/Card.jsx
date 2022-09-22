@@ -11,7 +11,7 @@ class Card extends Component {
         ? title.split(" ").slice(0, 2).join(" ")
         : title;
     return (
-      <div key={mal_id} className="card">
+      <div key={mal_id} className="card" onClick={this.props.onClick}>
         <img src={images.jpg.image_url} alt={title} />
         <button>{displayedTitle}</button>
       </div>
