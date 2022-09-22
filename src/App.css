@@ -179,3 +179,61 @@ header .btns button#login:hover {
   width: 552px;
   height: 532px;
 }
+
+/* End of landing page */
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(95% / 4);
+  height: 425px;
+  margin-bottom: 5rem;
+}
+
+#cards .card img {
+  width: 240px;
+  height: 355.66px;
+  border-radius: 35px;
+}
+
+#cards .card button {
+  font-family: "Segoe UI";
+  background: #330031;
+  color: #ffffff;
+  font-style: normal;
+  width: 240px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.125em;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+#cards .card button:hover {
+  background-color: inherit;
+  color: #330031;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  padding: 2rem 4rem;
+}
+
+.animeSectionTitle {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  line-height: 1.6;
+  border-bottom: 3px solid #330031;
+}

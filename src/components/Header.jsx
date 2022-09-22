@@ -1,4 +1,4 @@
-import { Component } from "react"
+import { Component } from "react";
 
 export default class Header extends Component {
   render() {
@@ -11,10 +11,10 @@ export default class Header extends Component {
           <li>about us</li>
         </ul>
         <div className="search">
-          <input type='text' placeHolder='search' />
+          <input type="text" placeholder="search" />
           <i className="fa-solid fa-magnifying-glass"></i>
         </div>
-        <div className='btns'>
+        <div className="btns">
           <button id="login">login</button>
           <button>sign up</button>
         </div>
