@@ -25,7 +25,7 @@ class CardsContainer extends React.Component {
     return (
       <section id="cards">
         {this.filterableAnimes().map((anime) => (
-          <Card key={anime.title} animeData={anime} />
+          <Card key={anime.title} animeData={anime}  onClick={ () => { this.props.handleAnimeDetails(anime) } } />
         ))}
       </section>
     );

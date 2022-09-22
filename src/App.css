@@ -8,7 +8,7 @@
 :root {
   --main-color: #330031;
   --second-main-color: #cccccc;
-  --first-color: #ffccfd;
+  --first-color: #635D63;
   --first-linear-color: #ca26ff;
   --second-linear-color: #fff3b0;
   --thierd-linear-color: #f4cac0;
@@ -66,7 +66,7 @@ header .search input {
   padding: 0.6rem 1rem;
   outline: 0;
   border: 0;
-  color: var(--black);
+  color: var(--white);
 }
 
 header .search i {
@@ -116,10 +116,6 @@ header .btns button#login:hover {
 
 /* HEADER STYLE ENDS */
 
-#landing {
-  padding: 2rem 5rem;
-  height: 741px;
-}
 
 .landing {
   background: linear-gradient(
@@ -142,7 +138,6 @@ header .btns button#login:hover {
 }
 
 .info h1 {
-  /* font-weight: 700; */
   font-size: 3.8rem;
   letter-spacing: 0.125em;
   color: #330031;
@@ -150,7 +145,6 @@ header .btns button#login:hover {
 }
 
 .info h2 {
-  /* font-weight: 700; */
   font-size: 2.2rem;
   line-height: 0%;
   letter-spacing: 0.395em;
@@ -166,13 +160,6 @@ header .btns button#login:hover {
   line-height: 149.5%;
   letter-spacing: 0.015em;
   color: #ffffff;
-}
-
-.image img {
-  margin-top: 6rem;
-  margin-right: -2rem;
-  width: 500px;
-  height: 500px;
 }
 
 /* End of landing page */
@@ -238,4 +225,156 @@ header .btns button#login:hover {
   font-size: 2rem;
   line-height: 1.6;
   border-bottom: 3px solid #330031;
+}
+
+#landing {
+  padding: 2rem 5rem;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+#landing .details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  position: relative;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#landing .details .image {
+  background-color: rgb(8, 6, 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+}
+
+#landing .details .image img {
+  width: 100%;
+  height: 100%;
+}
+
+#landing .details .image span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #11111150;
+}
+
+#landing .details .information {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2rem;
+  overflow: auto;
+  gap: 1rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: -4px 0 10px 0 var(--black);
+}
+
+#landing .details .information::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+#landing .details .information::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+/* Handle */
+#landing .details .information::-webkit-scrollbar-thumb {
+  background: var(--first-color);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+#landing .details .information::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#landing .details .information h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#landing .details .information p {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  color: var(--white);
+  align-items: center;
+}
+
+#landing .details .information p i {
+  color: #dd9b00;
+}
+
+#landing .details .information p span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#landing .details .information .story {
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#landing .details .information .story span {
+  width: 100%;
+}
+
+#landing .details .information .btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#landing .details .information .btns a{
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--main-color);
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#landing .details .information .btns a:nth-child(1) {
+  outline: 1px solid var(--white);
+  color: var(--white);
+  background-color: inherit;
+}
+
+#landing .details .information .btns a:nth-child(1):hover {
+  background-color: var(--white);
+  color: var(--main-color);
+}
+
+#landing .details .information .btns a:nth-child(2):hover {
+  outline: 1px solid var(--white);
+  color: var(--white);
+  background-color: inherit;
 }
